@@ -15,7 +15,7 @@ module.exports = {
 								.filter( i => !/^\.|node_modules/.test(i) ) // exclude .git and node_modules
 								.map( i => i+'/**/') // adding the glob's pattern to the directories
 								.map(i => { 
-									var a = glob.sync(i)
+									let a = glob.sync(i)
 									modules.push(...a)
 								})
 		modules.push('node_modules')
