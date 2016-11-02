@@ -1,7 +1,7 @@
 {
-  "name": "get-dir-recursive",
+  "name": "webpack-directory-scan",
   "version": "1.1.10",
-  "description": "get all folder and subfolers of a directory ",
+  "description": "return an array which contains all folders and subfolers of a provided directory ",
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha --watch --compilers js:babel-register",
