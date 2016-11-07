@@ -1,7 +1,7 @@
 
 ## What is this?
 
-this package will take a directory (you give it) and scan recursively. The result is the entires directory structure under given one.
+This package will take a directory (you give it) and scan recursively. The result is the entires directory structure under given one.
 
 Example: if your project folder consists of this
 
@@ -15,6 +15,7 @@ projet root
     |image
 ```
 
+`webpack-directory-scan` will get you something like below
 
 ```js
 let directorMapped = dirScan.get('./')
@@ -44,7 +45,7 @@ dirScan.get('./')
 
 ```
 
-'./' is to get all folders and sub folders of folders in root directory. By default this package will ignore `node_modules` folder and `.git` folder
+`./` is to get all folders and sub folders of folders in root directory. By default this package will ignore `node_modules` folder and `.git` folder
 
 
 ## Test
