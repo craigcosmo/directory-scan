@@ -1,4 +1,6 @@
-var recur = require('../dist/index.js')
+// var recur = require('../dist/index.js')
+var recur = require('../index.js')
+
 var expect = require('chai').expect
 import {assert} from 'chai'
 

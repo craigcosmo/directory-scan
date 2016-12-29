@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --watch --compilers js:babel-register",
     "patch": "npm version patch",
-    "p": "npm version patch && npm run compile && npm publish ",
+    "publish": "npm version patch && npm run compile && npm publish ",
     "compile": "babel --presets es2015,stage-0 -d dist/ index.js"
   },
   "author": "craig nguyen",
@@ -20,7 +20,8 @@
     "mocha": "^3.1.2"
   },
   "dependencies": {
-    "glob": "^7.1.1"
+    "glob": "^7.1.1",
+    "recursive-readdir-sync": "^1.0.6"
   },
   "babel": {
     "presets": [
