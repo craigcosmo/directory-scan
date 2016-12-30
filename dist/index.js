@@ -63,7 +63,7 @@ module.exports = {
 		// console.log('f',fileNames)
 		var duplicated = findDup(fileNames);
 		// console.log('d',duplicated)
-		// duplicated.length && console.log('there is duplicate file in your system:',duplicated )
+		duplicated.length && console.log('there is duplicate file in your system:', duplicated);
 		return modules;
 	}
 };
