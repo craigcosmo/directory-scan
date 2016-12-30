@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --watch --compilers js:babel-register",
     "patch": "npm version patch",
-    "p": "npm version patch && npm run compile && npm publish ",
+    "pub": "npm version patch && npm publish ",
     "compile": "babel --presets es2015,stage-0 -d dist/ index.js"
   },
   "author": "craig nguyen",
