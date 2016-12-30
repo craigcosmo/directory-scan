@@ -1,6 +1,6 @@
 {
   "name": "webpack-directory-scan",
-  "version": "1.1.84",
+  "version": "1.1.85",
   "description": "return an array which contains all folders and subfolers of a provided directory ",
   "main": "./dist/index.js",
   "scripts": {
