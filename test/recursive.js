@@ -1,14 +1,23 @@
-// var recur = require('../dist/index.js')
-var recur = require('../index.js')
 
-var expect = require('chai').expect
-import {assert} from 'chai'
+// import dirScan from '../dist/index.js'
+
+import dirScan from '../index.js'
+import {expect, assert} from 'chai'
 
 
-describe('test recur modules', function () {
-	it('should return an array of directories in this project', () => {
-		let array = recur.get('./')
-		console.log(array)
+describe('testing directory scan package', function () {
+	it('should return a list of directories', () => {
+		let array = dirScan.get('./')
+		// console.log(array)
 		expect(array).is.an('array')
-	})	
-});
+	})
+	it('should exclude the directory "folders"', function () {
+		let array = dirScan.get('./', 'folders')
+		expect(array).to.not.include('folders/')
+	})
+	it('should exclude an array of directory', function () {
+		let array = dirScan.get('./', ['folder', 'test'])
+		expect(array).to.not.include('folders/')
+		expect(array).to.not.include('test/')
+	})
+})

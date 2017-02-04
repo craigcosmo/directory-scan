@@ -1,13 +1,13 @@
 {
-  "name": "webpack-directory-scan",
-  "version": "1.2.0",
+  "name": "directory-scan",
+  "version": "1.0.0",
   "description": "return an array which contains all folders and subfolers of a provided directory ",
   "main": "./dist/index.js",
   "scripts": {
     "test": "mocha --watch --compilers js:babel-register",
     "patch": "npm version patch",
     "pub": "npm version patch && npm publish ",
-    "compile": "babel --presets es2015,stage-0 -d dist/ index.js"
+    "build": "babel --presets es2015,stage-0 -d dist/ index.js"
   },
   "author": "craig nguyen",
   "license": "ISC",
@@ -20,8 +20,7 @@
     "mocha": "^3.1.2"
   },
   "dependencies": {
-    "glob": "^7.1.1",
-    "recursive-readdir-sync": "^1.0.6"
+    "glob": "^7.1.1"
   },
   "babel": {
     "presets": [
