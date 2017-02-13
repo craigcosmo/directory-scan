@@ -5,9 +5,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "test": "mocha --watch --compilers js:babel-register",
-    "patch": "npm version patch",
     "build": "babel --presets es2015,stage-0 -d dist/ index.js",
-    "pub": "npm run build && npm version patch && npm publish "
+    "publish": "npm version patch && npm publish "
   },
   "author": "craig nguyen",
   "license": "ISC",
