@@ -48,7 +48,7 @@ module.exports = {
 		let duplicated = findDup(fileNameFromPathName(pathNames))
 
 		// console.log('d',duplicated)
-		duplicated.length && console.log('Found duplicated file names: \n\n' + duplicated +'\n\n' )
+		duplicated.length && console.log('Found duplicated file names: \n\n' +'['+ duplicated+']'+'\n' )
 		return directories
 	}
 }
