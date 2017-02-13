@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --watch --compilers js:babel-register",
     "build": "babel --presets es2015,stage-0 -d dist/ index.js",
-    "push": "npm run build && git add . && git commit -m \"fast deploy\" && git push origin master && npm version patch && npm publish "
+    "push": "npm run build && git add . && git commit -m \"just push\" && git push origin master && npm version patch && npm publish "
   },
   "author": "craig nguyen",
   "license": "ISC",
