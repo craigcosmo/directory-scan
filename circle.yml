@@ -11,9 +11,11 @@ dependencies:
     - yarn --no-lockfile
 test:
   override:
-    - npm t
+    - npm run ci-test
 deployment:
-  coverage:
-    branch: /.*/
+  publish:
+    branch: master
     commands:
-      - bash <(curl -s https://codecov.io/bash)
+      - npm run build
+      - npm version patch
+      - npm publish
