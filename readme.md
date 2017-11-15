@@ -39,10 +39,12 @@ projet root
 
 ```js
 import dirScan from 'directory-scan'
+```
 
 dirScan.get('./')
 
 //output 
+```
 [
     'app',
     'app/component',
@@ -51,7 +53,6 @@ dirScan.get('./')
     'css',
     'image'
 ]
-
 ```
 
 `./` is to get all folders and sub folders of folders in root directory. 
@@ -64,8 +65,11 @@ By default this package will automatically exclude `node_modules` folder and `.g
 import dirScan from 'directory-scan'
 
 dirScan.get('./', 'css')
+```
+
 
 //output 
+```
 [
     'app',
     'app/component',
@@ -82,8 +86,11 @@ This will scan every folders in your root except `css` folder
 import dirScan from 'directory-scan'
 
 dirScan.get('./', ['css','image'])
+```
+
 
 //output 
+```
 [
     'app',
     'app/component',
